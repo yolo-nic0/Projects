@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="new nav bar.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playball&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">L<span>o</span>g<span>o</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#"> Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="main">
+            <a href="#" class="user"><i class="ri-user-line"></i>Sign In</a>
+            <a href="#">Register</a>
+        </div>
+    </header>
+    <script type="text/javascript" src="new nav bar.js"></script>
+    
+    <section class="no"></section>
+    <section class="contact" id="contact">
+        <div class="center">
+            <h3>Contact Us</h3>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="" placeholder="Your Name" required>
+                <input type="email" name="" id="" placeholder="Email Address" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Project Description" required></textarea>
+                <input type="submit" name="" value="Send" class="send-bth">
+            </form>
+        </div>
+    </section>
+    <section id="section">
+        <div class="container">
+            <div class="contactinfo"></div>
+            <div class="contactform"></div>
+        </div>
+    </section>
+
+    <script>
+        window.onscroll = function(){
+            scroll();
+        };
+        function scroll() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById('header').style.top = "0";
+            }else{
+                document.getElementById('header').style.top = "-60px";
+            }
+        };
+    </script>
+</body>
+</html>
