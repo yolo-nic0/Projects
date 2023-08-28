@@ -410,7 +410,7 @@ nav .auth a img{
     background: var(--black-col);
     padding: 1rem 2rem;
     display: flex;
-    margin: 5rem;
+    margin: 5rem 0;
     border-bottom: .3rem solid var(--suc-col);
 }
 #join .jon1{
