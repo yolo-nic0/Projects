@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prototype Demo</title>
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
     <header>
@@ -13,23 +14,52 @@
                 <h3><span>T</span>ech<span>F</span>renzy</h3>
             </div>
             <div class="navigation">
-                <a href="#Home">How it works?</a>
-                <a href="#Features">Features</a>
+                <a href="#">How it works?</a>
+                <a href="#">Features</a>
                 <a href="#">Blogs</a>
                 <a href="#">About</a>
             </div>
-            <div class="auth">
-                <a href="#">LOG IN</a>
-                <a href="#"><img src="assets/icons8-menu-64.svg" alt=""></a>
+            <div class="sider">
+                <div class="auth">
+                    <button data-modal-target="#modal" id="btno" class="mango">Log-in <img src="assets/icons8-login-68.png" alt=""></button>
+                </div>
+                <a href="#"><img class="menu" src="assets/icons8-menu-64.svg" alt=""></a>
             </div>
-        </nav>
+            <div id="modal" class="modal">
+                <div class="legs"></div>
+                <div class="heads">
+                    <div class="done">
+                        <h1>.</h1>
+                        <button data-close-button  class="close-button">&times;</button>
+                    </div>
+                        <div class="login-form">
+                            <h1>Login</h1>
+                            
+                                <input type="text" placeholder="Username or email" name="username" id="username" required>                           
+                            
+                                <input type="password" placeholder="Password" name="password" id="password" required>
+                            
+                            <fieldset>
+                                <label for="remember"><span>Remember me </span><input type="checkbox" name="remember" id="remember"></label>   
+                            </fieldset>
+                            
+                            <input type="submit" class="sub-btn" value="Login">
+                            <a href="#">Forgot password?</a>
+                          
+                            <p class="message"></p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div id="over-lay"></div>
+            </nav>
     </header>
     <main>
         <section class="content">
             <section id="Home">
                 <div class="title">
                     <h1>Expert Developers for a connected <span>{world}</span></h1>
-                    <button class="nor-btn"><a href="#">GET A DEMO <img src="assets/icons8-arrow-90.png" alt=""></a></button>
+                    <button class="nor-btn"><a href="form.html">JOIN NOW <img src="assets/icons8-arrow-90.png" alt=""></a></button>
                 </div>
                 <div class="ditail">
                     <button class="vid-btn"><a href="#"><img src="assets/icons8-play-643.png" alt="">WATCH A VIDEO</a></button>
@@ -77,13 +107,13 @@
                 </div>
                 <div class="part2">
                     <div class="car1">
-                        <h3>Get customized AI-based recomendations.</h3>
+                        <h3>Help of plugins and source code templates.</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste amet sit iusto ad voluptatibus soluta debitis cum eum hic, neque nemo est qui dolorum necessitatibus quo earum veniam quasi.</p>
                         <a href="">Read more ></a>
                         <img src="assets/application-programming-interface-animate.svg" alt="">
                     </div>
                     <div class="car2">
-                        <h3>Help of plugins and source code templates.</h3>
+                        <h3>Get customized AI-based recomendations.</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste amet sit iusto ad voluptatibus soluta debitis cum eum hic, neque nemo est qui dolorum necessitatibus quo earum veniam quasi.</p>
                         <a href="">Read more ></a>
                         <img src="assets/code-typing-animate.svg" alt="">
@@ -98,7 +128,6 @@
                     <div class="secpar1">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur labore recusandae voluptatibus cupiditate aperiam tempore. Cupiditate debitis asperiores eos fugit tempore, pariatur itaque, quibusdam repellendus perferendis, et accusantium animi quidem?</p>
                         <div class="but-btn">
-                            <button class="gen"><span>WATCH A VIDEO</span></button>
                             <button class="gen2"><span>GET A DEMO</span></button>
                         </div>
                     </div>
@@ -110,7 +139,7 @@
             <section id="join">
                 <div class="jon1">
                     <h3>Join the <span>{community}</span> around the world</h3>
-                    <a href="#"><button class="jo-btn">Join now</button></a>
+                    <a href="form.html"><button class="jo-btn">Join now</button></a>
                 </div>
                 <div class="jon2">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fuga distinctio tempora! Facilis tempora sit ratione iusto, porro libero sunt quas necessitatibus tempore soluta voluptatum molestias repudiandae voluptatem numquam laboriosam?</p>
