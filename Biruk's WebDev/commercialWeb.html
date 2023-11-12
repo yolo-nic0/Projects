@@ -4,24 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trading</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="commercialWeb.css">
 
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <h1>BuraWeb</h1>
-            </div>
+        <ul class="sidebar">
+            <div class="close" onclick=closeSidebar()><a href="#"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                <svg
+                   viewBox="0 0 256 256"
+                   width="30"
+                   height="30"
+                   version="1.1"
+                   id="svg2"
+                   sodipodi:docname="icons8-close.svg"
+                   inkscape:export-filename="icons8-close.png"
+                   inkscape:export-xdpi="96"
+                   inkscape:export-ydpi="96"
+                   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                   xmlns="http://www.w3.org/2000/svg"
+                   xmlns:svg="http://www.w3.org/2000/svg">
+                  <defs
+                     id="defs2" />
+                  <sodipodi:namedview
+                     id="namedview2"
+                     pagecolor="#ffffff"
+                     bordercolor="#999999"
+                     borderopacity="1"
+                     inkscape:showpageshadow="0"
+                     inkscape:pageopacity="0"
+                     inkscape:pagecheckerboard="0"
+                     inkscape:deskcolor="#d1d1d1" />
+                  <g
+                     fill="#2c9448"
+                     fill-rule="nonzero"
+                     stroke="none"
+                     stroke-width="1"
+                     stroke-linecap="butt"
+                     stroke-linejoin="miter"
+                     stroke-miterlimit="10"
+                     stroke-dasharray="none"
+                     stroke-dashoffset="0"
+                     font-family="none"
+                     font-weight="none"
+                     font-size="none"
+                     text-anchor="none"
+                     style="mix-blend-mode:normal"
+                     id="g2">
+                    <g
+                       transform="scale(5.12)"
+                       id="g1"
+                       style="fill:#000000">
+                      <path
+                         d="M 40.7832,7.27148 C 40.25469,7.28395 39.75262,7.50515 39.38672,7.88671 L 25.05078,22.22265 10.71484,7.88671 C 10.33815,7.49844 9.82026,7.2793 9.27929,7.27929 8.46492,7.27948 7.73198,7.77338 7.42605,8.5281 7.12013,9.28282 7.30232,10.14767 7.88671,10.71483 L 22.22265,25.05077 7.88671,39.38671 c -0.52247,0.50164 -0.73292,1.24653 -0.55021,1.9474 0.18272,0.70087 0.73005,1.24821 1.43093,1.43093 0.70087,0.18272 1.44577,-0.02774 1.9474,-0.55021 L 25.05077,27.87889 39.38671,42.21483 c 0.50164,0.52247 1.24653,0.73293 1.94741,0.55021 0.70088,-0.18272 1.24821,-0.73005 1.43093,-1.43093 0.18272,-0.70088 -0.02774,-1.44577 -0.55021,-1.94741 L 27.8789,25.05076 42.21484,10.71482 C 42.81051,10.14363 42.99423,9.26524 42.6774,8.50321 42.36057,7.74117 41.60825,7.25196 40.7832,7.27146 Z"
+                         id="path1"
+                         style="fill:#000000" />
+                    </g>
+                  </g>
+                </svg>
+                </a></div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#part2">How it works?</a></li>
+                <li><a href="#part3">Why PayPal?</a></li>
+                <li><a href="#part4">Contact Us</a></li>
+                <li><a href="#" class="login"><span>Log-in</span></a></li>
             </ul>
-            <div class="reg">
-                <button>Login</button>
-            </div>
-            <div class="menu"></div>
+        </ul>
+
+        <nav>
+            <div class="logo">Habesha<span>pay</span></div>
+            
+            <ul class="decnav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#part1">Part 1</a></li>
+                <li><a href="#part4">part 4</a></li>
+                <li><a href="#part5">part 5</a></li>
+                <li><a href="#part6">part 6</a></li>
+                <a href="#" class="login"><span>Log-in</span></a>
+
+            </ul>
+            <div class="menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="25px" height="25px"><g fill="#2c9448" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M3,8c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h44c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM3,23c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h44c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM3,38c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h44c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175z"></path></g></g></svg></a></div>
         </nav>
     </header>
     <main>
@@ -34,44 +100,44 @@
                 </div>
             </div>
             <div class="cont2">
-                <div class="backImg"><img src="assets/money-income-animate (1).svg" alt=""></div>
+                <div class="backImg"><img src="assets/ocket-money-5338132.svg" alt=""></div>
             </div>
         </section>
         <section id="part1">
             <div class="container showAnimation">
                 <div class="box animate">
                     <div class="icon">
-                        <div class="icnhov"></div>
+                        <div class="icnhov"><img src="assets/noun-profit-6276569.svg" alt=""></div>
                     </div>
                     <div class="texters">
-                        <H1>Lorem Ipsum 1</H1>
+                        <H1>Profitable off all</H1>
                         <p>I would have loved the way she walks if she had nice and fit closes.</p>
                     </div>
                 </div>
                 <div class="box animate">
                     <div class="icon">
-                        <div class="icnhov"></div>
+                        <div class="icnhov"><img src="assets/noun-24-hour-6180213.svg" alt=""></div>
                     </div>
                     <div class="texters">
-                        <H1>Lorem Ipsum 2</H1>
+                        <H1>24hr Service</H1>
                         <p>I would have loved the way she walks if she had nice and fit closes.</p>
                     </div>
                 </div>
                 <div class="box animate">
                     <div class="icon">
-                        <div class="icnhov"></div>
+                        <div class="icnhov"><img src="assets/noun-secure-transactions-4527245.svg" alt=""></div>
                     </div>
                     <div class="texters">
-                        <H1>Lorem Ipsum 3</H1>
+                        <H1>Secure than most</H1>
                         <p>I would have loved the way she walks if she had nice and fit closes.</p>
                     </div>
                 </div>
                 <div class="box animate">
                     <div class="icon">
-                        <div class="icnhov"></div>
+                        <div class="icnhov"><img src="assets/noun-money-exchange-906707.svg" alt=""></div>
                     </div>
                     <div class="texters">
-                        <H1>Lorem Ipsum 4</H1>
+                        <H1>Faster than ever</H1>
                         <p>I would have loved the way she walks if she had nice and fit closes.</p>
                     </div>
                 </div>
@@ -90,6 +156,26 @@
                 <video src="assets/How To Make A Website Header Using HTML And CSS Step By Step _ Web Design In HTML _ CSS(720P_HD).mp4" controls ></video>
             </div>
         </section>
+        <section id="part6">
+            <div class="cont1">
+                <div class="content1">
+                    <div class="tebut">
+                        <h3>How to Start?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia distinctio cum dolores aperiam vitae corrupti adipisci quis nulla, maiores minima, consectetur sit amet officiis aut iusto placeat? Asperiores, autem recusandae.</p>
+                        <button>Create account</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cont2">
+                <div class="content2">
+                    <div class="tebut">
+                        <h3>Want to try?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur error atque quisquam, illum ullam distinctio excepturi nesciunt, cupiditate labore sint nostrum a ad earum doloribus. Consequatur incidunt odio excepturi facilis.</p>
+                        <button>Try a demo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="part3">
             <div class="content2">
                 <iframe width="100%" height="70%"  src="https://www.youtube.com/embed/oGNrjDorjhE?si=eKV1EE-i4hPE6bzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -102,6 +188,26 @@
                 </div>
                 <div class="tex2">
                     <p>“Our website, logo and print materials were exactly what we needed for our Church’s capital campaign! The graphics truly reflected our goals & mission and it was great working with Free Church Websites.”</p>
+                </div>
+            </div>
+        </section>
+        <section id="part5">
+            <div class="comit">
+                <div class="card">
+                    <h1>7</h1>
+                    <p>Countries Served</p>
+                </div>
+                <div class="card">
+                    <h1>11</h1>
+                    <p>Yeat Experince</p>
+                </div>
+                <div class="card">
+                    <h1>7</h1>
+                    <p>Support staff</p>
+                </div>
+                <div class="card">
+                    <h1>99.99%</h1>
+                    <p>Website Uptime</p>
                 </div>
             </div>
         </section>
@@ -120,9 +226,58 @@
             </div>
 
         </section>
-        <section id="part5"></section>
     </main>
-    <footer></footer>
+    <footer id="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Kidus <span>Trading</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">About</a>
+                |
+                <a href="#">Contact</a>
+                |
+                <a href="#">Blog</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2021 <strong>kidusTrading</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Yeka</span>
+                    Addis Abeba</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+25193-859-8567</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:Kiduszerihun17@gmail.com">Kiduszerihun17@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>Kidus Zerihun</strong> is a Youtube channel where you can find more creative CSS Animations
+                and
+                Effects along with
+                HTML, JavaScript and Projects using C/C++.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
     <script>
         window.addEventListener('scroll', handleScroll);
 
